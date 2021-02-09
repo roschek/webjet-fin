@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="shortcut icon" href="./images/webjet-logo.jpg" type="image/jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <title>Web JET</title>
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <section class="header__main">
+      <div class="header__logo header__logo_zk">
+        <a href="https://zk.city/">
+          <img src="<%=require('./images/zk.svg').default%>" alt="Логотип Зона комфорта">
+        </a>
+      </div>
+      <div class="header__logo header__logo_webjet">
+        <img class="header__logo" src="<%=require('./images/wj.svg').default%>" alt="Логотип webjet">
+      </div>
+      <a class="header__button header__button_desktop" href="#footer">ВЫЙТИ НА СВЯЗЬ</a>
+      <div class="burger"></div>
+    </section>
+<!--    <section class="header__main">-->
+<!--      <div class="logo__section">-->
+<!--        <a href="https://zk.city/"><img src="<%=require('./images/zk-logo.jpg').default%>" alt="main logo"></a>-->
+<!--        <img class="header__logo" src="<%=require('./images/webjet-logo.jpg').default%>" alt="webjet logo">-->
+<!--      </div>-->
+<!--      <ul class="header__nav">-->
+<!--        <li class="header__item"><a href="#rocket">ПРЕИМУЩЕСТВА</a></li>-->
+<!--        <li class="header__item"><a href="#tabs">УСЛУГИ</a></li>-->
+<!--        <li class="header__item"><a href="#social">КОНТАКТЫ</a></li>-->
+<!--      </ul>-->
+<!--      <a href="#footer" class="header__button">ВЫЙТИ НА СВЯЗЬ</a>-->
+<!--      <div class="burger"></div>-->
+<!--    </section>-->
+    <p class="header__banner">Даём на сайты годовую гарантию!</p>
+    <h1 class="header__title">Доказываем бизнесу, что он может больше</h1>
+    <p class="header__subtitle">Глубоко изучаем ваш бизнес и разрабатываем удобный сайт, который запомнится клиентам и оставит конкурентов позади</p>
+    <a class="header__button header__button_mobile" href="#footer">ВЫЙТИ НА СВЯЗЬ</a>
+  </div>
+
+</header>
+<main class="main">
+  <section id="aboutus" class="aboutus">
+    <img class="aboutus__fog" src="<%=require('./images/fog.png').default%>" alt="image fog">
+    <div class="wrapper">
+      <button class="aboutus__link-down" href="#"><img src="<%=require('./images/jet.png').default%>" alt="link down">
+      </button>
+      <h2 class="aboutus__title">Наши качества, которые выгодно отличают нас от конкурентов</h2>
+      <div class="aboutus__icons">
+        <div class="aboutus__card">
+          <img class="aboutus__icon" src="<%=require('./images/rocket.png').default%>" alt="icon rocket">
+          <p class="aboutus__text">Амбициозные и проактивные</br> <span>Ваш проект для нас — челлендж, к которому нам не терпится приступить.</span></p>
+        </div>
+        <div class="aboutus__card">
+          <img class="aboutus__icon" src="<%=require('./images/robot.png').default%>" alt="icon robot">
+          <p class="aboutus__text">Технологичные и трендовые</br><span>Делать сайты и дизайн в стиле прошлых десятилетий для нас моветон.</span></p>
+        </div>
+        <div class="aboutus__card">
+          <img class="aboutus__icon" src="<%=require('./images/omnichannel.png').default%>" alt="icon omnit">
+          <p class="aboutus__text">Многозадачные</br><span>Нас много, поэтому ничто не помешает нам одновременно делать сайт и настраивать рекламу.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cards" class="cards">
+    <div class="wrapper">
+      <div class="card__wrapper">
+        <div class="card__item">
+          <div class="card__image-wrapper">
+          <img class="card__item-image" src="<%=require('./images/cards/card-laptop.png').default%>" alt="card">
+          </div>
+          <p class="card__item-text">Делаем сайты и приложения</p>
+        </div>
+        <div class="card__item">
+          <p class="card__item-text card__item-text-right">Помогаем</br> с продвижением</p>
+          <div class="card__image-wrapper">
+          <img class="card__item-image " src="<%=require('./images/cards/card-bussines.jpg').default%>" alt="card">
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__image-wrapper">
+          <img class="card__item-image" src="<%=require('./images/cards/card-flying-mans.png').default%>" alt="card">
+          </div>
+          <p class="card__item-text">Мыслим</br>стратегически</p>
+        </div>
+        <h2 class="card__title">Подходим к делу серьезно</h2>
+      </div>
+    </div>
+  </section>
+  <section id="rocket" class="rocket-section">
+    <div class="wrapper">
+      <div class="rocket__block">
+        <img class="rocket__image" src="<%=require('./images/big-rocket.png').default%>" alt="big rocket">
+        <ul class="rocket__cards">
+          <li class="rocket__card">
+            <p class="rocket__number">1</p>
+            <div class="rocket__content">
+              <h3 class="rocket__content-title">Искренне интересуемся вашим бизнесом
+              </h3>
+              <p class="rocket__content-text">Мы узнаем о нём как можно больше и учтём все детали, чтобы сделать сайт,
+                который лучше всего решит именно ваши задачи. Индивидуальный подход — наше всё. </p>
+            </div>
+          </li>
+          <li class="rocket__card">
+            <p class="rocket__number">2</p>
+            <div class="rocket__content">
+              <h3 class="rocket__content-title">Работаем быстро и не срываем сроки
+              </h3>
+              <p class="rocket__content-text">Мы не будем откладывать релиз в погоне за музой веб-дизайнера. Озвучим
+                реалистичные дедлайны и успеем вовремя даже с учётом правок.
+              </p>
+            </div>
+          </li>
+          <li class="rocket__card">
+            <p class="rocket__number">3</p>
+            <div class="rocket__content">
+              <h3 class="rocket__content-title">Обмениваемся экспертизой</h3>
+              <p class="rocket__content-text">Постоянно будем на связи, первым делом узнаем все тонкости продукта и
+                сферы бизнеса. А сами покажем, как управлять сайтом, и объясним, как он работает на вас.
+              </p>
+            </div>
+          </li>
+          <li class="rocket__card">
+            <p class="rocket__number">4</p>
+            <div class="rocket__content">
+              <h3 class="rocket__content-title">Заботимся о вас в течение года после релиза
+              </h3>
+              <p class="rocket__content-text">Делаем сайты качественно, чтобы не ломали голову ни вы, ни ваши
+                сотрудники. Но если что-то упадёт по нашей вине или вам понадобятся мелкие доработки (до 10 единиц), мы
+                сделаем всё бесплатно. Бережно размещаем ваши сайты на нашем хостинге.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="tabs" id="tabs">
+    <div class="wrapper">
+      <h2 class="tabs__title">Делаем всё, что касается веба</h2>
+      <div class="tabs__buttons">
+        <div class="tabs__btn-inner">
+          <button class="tabs__button tabs__button-active" data-name="tabs-design">Дизайн и брендинг</button>
+        </div>
+        <div class="tabs__btn-inner">
+          <button class="tabs__button" data-name="tabs-function">Функциональные площадки</button>
+        </div>
+        <div class="tabs__btn-inner">
+          <button class="tabs__button" data-name="tabs-analitics">Настройка аналитики</button>
+        </div>
+        <div class="tabs__btn-inner">
+          <button class="tabs__button" data-name="tabs-promotion">Продвижение в сети</button>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__content-item tabs-design">
+          <div class="tabs__content-visual">
+            <h3 class="tabs__content-title tabs__content-title_desing">Дизайн
+              <br>и брендинг</h3>
+            <div class="bonus-cards">
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №1</h4>
+                  <p class="bonus-text">Бесплатно оформим соцсети при заказе визуального брендинга или макета сайта</p>
+                </div>
+              </div>
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №2</h4>
+                  <p class="bonus-text">Дарим медиаплан на 15 публикаций при заказе позиционирования и нейминга</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-content">
+            <p>
+              <span>Продумываем</span> позиционирование, визуальную концепцию и вербальную айдентику
+              так, чтобы продукт был ярким, отражал ваши идеи и вызывал у целевой аудитории ощущение
+              близости с брендом.
+            </p>
+            <p>
+              <span>Рисуем</span> лого и айдентику, <span>придумываем</span> название,<span>находим</span> TOV, <span>создаём</span> макеты сайтов и визуальное оформление
+              соцсетей. <span>Вооружаем</span> всем необходимым, чтобы клиенты приходили и хотели
+              остаться.
+            </p>
+          </div>
+        </div>
+        <div class="tabs__content-item tabs-function">
+          <div class="tabs__content-visual">
+            <h3 class="tabs__content-title tabs__content-title_function">Функциональные
+              <br>площадки</h3>
+            <div class="bonus-cards">
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №1</h4>
+                  <p class="bonus-text">Дарим год поддержки по базовому тарифу и хостинг при заказе
+                    сайта</p>
+                </div>
+              </div>
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №2</h4>
+                  <p class="bonus-text">Бесплатно привязываем Яндекс.Кассу при заказе
+                    интернет-магазина</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-content">
+            <p>Лендинг, корпоративный сайт или приложение — площадка, от которой зависят ваши продажи и
+              конверсия. Её строительство стоит доверять профи, чтобы она была удобной, технологичной
+              и привлекательной.</p>
+            <p>Мы <span>разрабатываем</span> сайты с нуля, <span>правим</span> готовые и<span>делаем</span> лучше существующие: <span>прикручиваем</span> к ним каталоги,
+              интернет-магазины, кассы, личные кабинеты. Знаем, что лендинги — как робот Спот: никого
+              не подводят. Поэтому их тоже делаем.</p>
+          </div>
+        </div>
+        <div class="tabs__content-item tabs-analitics">
+          <div class="tabs__content-visual">
+            <h3 class="tabs__content-title tabs__content-title_analitics">Настройка аналитики</h3>
+            <div class="bonus-cards">
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №1</h4>
+                  <p class="bonus-text">Бесплатно размещаем чат-мессенджера на сайте при заказе
+                    интеграции с CRM</p>
+                </div>
+              </div>
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №2</h4>
+                  <p class="bonus-text">Дарим окно удержания клиента на сайте при заказе настройки
+                    коллтрекинга</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-content">
+            <p>Чтобы космический корабль летел ровно и не ломался, в нём устанавливают множество
+              датчиков контроля — по всем возможным параметрам. С бизнесом и продвижением то же самое:
+              нужно держать руку на пульсе, чтобы следить за курсом и вовремя его корректировать.</p>
+            <p>Наша команда <span>оснастит</span> ваш бизнес в онлайне всеми необходимыми датчиками
+              контроля: Яндекс.Метрикой, GoogleAnalytics, коллтрекингом, CRM и другими инструментами
+              анализа. И <span>научит</span> всем этим пользоваться.</p>
+          </div>
+        </div>
+        <div class="tabs__content-item tabs-promotion">
+          <div class="tabs__content-visual">
+            <h3 class="tabs__content-title tabs__content-title_promotion">Продвижение <span class="t-nowrap">в сети</span>
+            </h3>
+            <div class="bonus-cards">
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №1</h4>
+                  <p class="bonus-text">Дарим мультиссылку для шапки профиля при заказе SMM услуг</p>
+                </div>
+              </div>
+              <div class="bonus-card">
+                <div class="bonus-card__inner">
+                  <h4 class="bonus-title">Бонус №2</h4>
+                  <p class="bonus-text">Бесплатно настраиваем аналитику в Яндекс.Метрике при заказе
+                    контекстной рекламы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-content">
+            <p>SEO, SMM, ORM, контекст — мы делаем всё. <span>Выводим</span> продажи на новый уровень,
+              потому что верим, что продвижение в сети — это комплексная задача. При этом <span>работаем</span> не только с пакетами услуг, но и с каждой из них по отдельности.</p>
+            <p>Не <span>занимаемся</span> маркетингом ради маркетинга и ориентируемся на рост прибыли в
+              каждом шаге, даже в создании репутации. <span>Понимаем</span>, что цифры так же важны,
+              как и неизмеримое восприятие бренда аудиторией.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--  <section id="tabs" class="tabs">-->
+<!--    <div class="wrapper">-->
+<!--      <h2 class="tabs__title">Делаем всё, что касается веба</h2>-->
+<!--      <div class="tabs__buttons">-->
+<!--        <button class="tabs__button button-design">Дизайн и брендинг</button>-->
+<!--        <button class="tabs__button button-function">Функциональные площадки</button>-->
+<!--        <button class="tabs__button button-analitycs">Настройка аналитики</button>-->
+<!--        <button class="tabs__button button-promotion">Продвижение в сети</button>-->
+<!--      </div>-->
+<!--      <div class="tabs__content">-->
+<!--        <div class="tabs__content-item tabs-design">-->
+<!--          <div class="tabs__content-visual">-->
+<!--            <h3 class="tabs__content-title">Дизайн</br> и брендинг</h3>-->
+<!--            <div class="bonus-cards">-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №1</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Бесплатно оформим соцсети при заказе визуального брендинга или макета сайта-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №2</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Дарим медиаплан на 15 публикаций при заказе позиционирования и нейминга-->
+
+
+<!--                </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="tabs__content-content">-->
+<!--            <p><span>Продумываем</span> позиционирование, визуальную концепцию и вербальную айдентику так, чтобы продукт-->
+<!--              был ярким,-->
+<!--              отражал ваши идеи и вызывал у целевой аудитории ощущение близости с брендом.</p>-->
+<!--            <p><span>Рисуем</span> лого и айдентику, <span>придумываем</span> название, <span>находим</span> TOV, <span>создаём</span>-->
+<!--              макеты сайтов и визуальное оформление-->
+<!--              соцсетей. <span>Вооружаем</span> всем необходимым, чтобы клиенты приходили и хотели остаться.</p>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--        <div class="tabs__content-item tabs-function">-->
+<!--          <div class="tabs__content-visual">-->
+<!--            <h3 class="tabs__content-title-function">Функциональные</br> площадки</h3>-->
+<!--            <div class="bonus-cards">-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №1</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Дарим год поддержки по базовому тарифу и хостинг при заказе сайта-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №2</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Бесплатно привязываем Яндекс.Кассу при заказе интернет-магазина-->
+<!--                </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="tabs__content-content">-->
+<!--            <p>Лендинг, корпоративный сайт или приложение — площадка, от которой зависят ваши продажи и конверсия. Её-->
+<!--              строительство стоит доверять профи, чтобы она была удобной, технологичной и привлекательной.-->
+<!--            </p>-->
+<!--            <p>Мы <span>разрабатываем</span> сайты с нуля, <span>правим</span> готовые и <span>делаем</span> лучше-->
+<!--              существующие: <span>прикручиваем</span> к ним каталоги,-->
+<!--              интернет-магазины, кассы, личные кабинеты. Знаем, что лендинги — как робот Спот: никого не подводят.-->
+<!--              Поэтому их тоже делаем.-->
+<!--            </p>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--        <div class="tabs__content-item tabs-analitics">-->
+<!--          <div class="tabs__content-visual">-->
+<!--            <h3 class="tabs__content-title-analitics">Настройка-->
+<!--              аналитики</h3>-->
+<!--            <div class="bonus-cards">-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №1</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Бесплатно размещаем чат-мессенджера на сайте при заказе интеграции с CRM-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №2</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Дарим окно удержания клиента на сайте при заказе настройки коллтрекинга</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="tabs__content-content">-->
+<!--            <p>Чтобы космический корабль летел ровно и не ломался, в нём устанавливают множество датчиков контроля — по-->
+<!--              всем возможным параметрам. С бизнесом и продвижением то же самое: нужно держать руку на пульсе, чтобы-->
+<!--              следить за курсом и вовремя его корректировать.</p>-->
+<!--            <p>Наша команда <span>оснастит</span> ваш бизнес в онлайне всеми необходимыми датчиками контроля:-->
+<!--              Яндекс.Метрикой,-->
+<!--              GoogleAnalytics, коллтрекингом, CRM и другими инструментами анализа. И <span>научит</span> всем этим-->
+<!--              пользоваться.</p>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--        <div class="tabs__content-item tabs-promotion">-->
+<!--          <div class="tabs__content-visual">-->
+<!--            <h3 class="tabs__content-title-promotion">Продвижение в сети</h3>-->
+<!--            <div class="bonus-cards">-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №1</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Дарим мультиссылку для шапки профиля при заказе SMM услуг-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <div class="bonus-card">-->
+<!--                <h4 class="bonus-title">Бонус №2</h4>-->
+<!--                <p class="bonus-text">-->
+<!--                  Бесплатно настраиваем аналитику в Яндекс.Метрике при заказе контекстной рекламы</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="tabs__content-content">-->
+<!--            <p>SEO, SMM, ORM, контекст — мы делаем всё. <span>Выводим</span> продажи на новый уровень, потому что верим,-->
+<!--              что-->
+<!--              продвижение в сети — это комплексная задача. При этом <span>работаем</span> не только с пакетами услуг, но-->
+<!--              и с каждой-->
+<!--              из них по отдельности.</p>-->
+<!--            <p>Не <span>занимаемся</span> маркетингом ради маркетинга и ориентируемся на рост прибыли в каждом шаге,-->
+<!--              даже в создании-->
+<!--              репутации. <span>Понимаем</span>, что цифры так же важны, как и неизмеримое восприятие бренда аудиторией.-->
+<!--            </p>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--  </section>-->
+</main>
+<footer id="footer" class="footer">
+  <div class="wrapper">
+    <h2 class="footer__title">Выйти на связь</h2>
+    <p class="footer__subtitle">Подайте нам сигнал</p>
+    <form action="" name="subscribe" class="form" novalidate>
+      <div class="input-section">
+        <label class="input-name">
+          <input class="input-name" type="text" placeholder="Ваш позывной">
+        </label>
+        <label class="input-tel">
+          <input id="tel" class="input-tel" type="tel" placeholder="Номер телефона">
+        </label>
+        <label class="input-mail">
+          <input class="input-mail" type="email" placeholder="E-mail" novalidate>
+        </label>
+      </div>
+      <select class="form-select" size="1" name="options" disabled>
+        <option disabled selected>С чем будем работать</option>
+      </select>
+      <select class="form-select" name="bonus" disabled>
+        <option disabled selected>Бонусы</option>
+      </select>
+      <label class="checkbox-input">
+      <input type="checkbox" required checked>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
+      </label>
+      <button class="form__button submit" type="submit">ПОДАТЬ СИГНАЛ</button>
+    </form>
+  </div>
+  <!-- Блок с анимацией -->
+  <div class="footer__bottom">
+    <div class="footer__haze"></div>
+    <div class="footer__base"></div>
+    <div class="footer__stone footer__stone_1"></div>
+    <div class="footer__stone footer__stone_2"></div>
+    <div class="footer__stone footer__stone_3"></div>
+    <div class="footer__stone footer__stone_4"></div>
+  </div>
+  <!-- Блок с анимацией -->
+<!--  <img class="moon__image" src="<%=require('./images/footer-img.png').default%>" alt="">-->
+</footer>
+<section id="social" class="social">
+  <div class="wrapper">
+    <section class="header__main social-footer">
+      <div class="logo__section logo__section-footer">
+        <a href="https://zk.city/"><img src="<%=require('./images/zk-logo.jpg').default%>" alt="main logo"></a>
+        <img class="header__logo" src="<%=require('./images/webjet-logo.jpg').default%>" alt="webjet logo">
+      </div>
+      <div class="social-block">
+        <div class="social-contacts">
+          <h4>КОНТАКТЫ</h4>
+          <a href="tel:+7(812)200-50-60">+7(812)200-50-60</a>
+          <a href="mailto:web1@zk.spb.ru">web1@zk.spb.ru</a>
+        </div>
+        <div class="social-links">
+          <h4 class="social-links-title" >СОЦСЕТИ</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/webjet_studio/?hl=ru" class="social-link" target="_blank"><img src="<%=require('./images/insta.svg').default%>" alt="link to instagram"></a>
+            <a href="https://vk.com/web_jet" class="social-link" target="_blank"><img src="<%=require('./images/vk-icon.svg').default%>" alt="link to vk"></a>
+            <a href="https://www.facebook.com/studio.webjet/" class="social-link" target="_blank"><img src="<%=require('./images/facebook-icon.svg').default%>" alt="link to vk"></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</section>
+<div class="copyright">
+  <h5>© Copyright ©  2021 WebJet. All rights reserved.</h5>
+</div>
+<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>
