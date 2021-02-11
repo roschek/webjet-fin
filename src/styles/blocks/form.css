@@ -1,0 +1,136 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 300px auto;
+    z-index: 10;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+
+}
+
+input{
+    background: white;
+    padding: 20px 60px;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+.input-name{
+    position: relative;
+}
+.input-name:before{
+    position: absolute;
+    top:18px;
+    left:10px;
+    background-image: url("../../images/name.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    content: '';
+    width: 30px;
+    height: 30px;
+}
+.input-tel{
+    position: relative;
+}
+.input-tel:before{
+    position: absolute;
+    top:18px;
+    left:10px;
+    background-image: url("../../images/Phone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+.input-mail{
+    position: relative;
+    margin-right: 0;
+}
+.input-mail:before{
+    position: absolute;
+    top:18px;
+    left:10px;
+    background-image: url("../../images/Email.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+input::placeholder{
+    color:#7E868E;
+}
+.form__button{
+    padding: 20px;
+    max-width: 200px;
+    align-self: flex-end;
+    margin-right: 20px;
+    background-color: #F29100;
+    border: none;
+    transition: .3s;
+}
+.form__button:hover{
+    color:white;
+}
+.form-select{
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    min-width: 200px;
+    align-self: center;
+
+}
+.checkbox-input{
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    cursor: pointer;
+}
+@media (max-width: 1060px) {
+.form{
+   margin: 0 100px;
+}
+    .input-section{
+
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    .input-name{
+        margin-right: 0;
+    }
+    .input-tel{
+        margin-right: 0;
+    }
+    .form-select{
+        width: 100%;
+        align-self: center;
+            }
+}
+@media (max-width: 670px) {
+    .form__button{
+        margin-top: 50px;
+
+        align-self: center;
+        width: 200px;
+    }
+    .form-select{
+display: none;
+    }
+
+    .checkbox-input{
+        width: 300px;
+        line-height:10px;
+        margin-bottom: 20px;
+    }
+}
